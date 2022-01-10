@@ -5,6 +5,8 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+const port = process.env.PORT || 3000
+
 //path
 const publicdirectorypath = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../template/views')
@@ -98,6 +100,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Listening to port 3000")
+app.listen(port, () => {
+    console.log("Listening to port " + port)
 })
