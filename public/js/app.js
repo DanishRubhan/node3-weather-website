@@ -1,4 +1,3 @@
-console.log('client side server!!')
 
 const msg1 = document.getElementById('msg1')
 
