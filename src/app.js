@@ -7,7 +7,8 @@ const forecast = require('./utils/forecast')
 
 const port = process.env.PORT || 3000
 
-//path
+
+//path modules
 const publicdirectorypath = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../template/views')
 const partialspath = path.join(__dirname, '../template/partials')
